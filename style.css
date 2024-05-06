@@ -1,0 +1,14 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+:root {
+    --Dark: #00233c;
+    --Primary: #0269b3;
+    --Accent: #80e8ff;
+    --AccentLight: #ecf9ff;
+    --Border: #ddd;
+    --Text: #333;
+    --Invert: #fff;
+    --Disabled: #d3d3d3;
+}
