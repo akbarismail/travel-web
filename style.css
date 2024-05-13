@@ -67,6 +67,19 @@ span.hero-title {
     gap: 3rem;
 }
 
+.btn-primary {
+    background-color: var(--Primary);
+    color: var(--Invert);
+    font-weight: bold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--AccentLight);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+}
+
 .btn-tertiary {
     background-color: var(--Invert);
     color: var(--Primary);
@@ -78,7 +91,197 @@ span.hero-title {
     color: var(--Dark);
 }
 
+.feature {
+    background-color: var(--Invert);
+}
+
+.feature-right p {
+    color: var(--Text);
+    font-size: 20px;
+}
+
+.feature-right .card-feature {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-feature {
+    padding: 16px;
+    border: 1px solid var(--Border);
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.card-feature p {
+    color: var(--Text);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-feature img {
+    width: 28px;
+    height: 28px;
+}
+
+.explore {
+    color: var(--Invert);
+    background-image: url("assets/bg-paris.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explore-content {
+    text-align: center;
+}
+
+.group-explore-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.invert-card {
+    background-color: var(--Invert);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.feature-form-right {
+    border: 1px solid var(--Border);
+    padding: 32px;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.feature-form .wrap-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 697px;
+}
+
+.group-footer {
+    margin-bottom: 72px;
+}
+
+.content-footer {
+    margin-top: 42px;
+}
+
+.content-footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.contact p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-item-first h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-item-first div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-item-second h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-item-second div p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Text);
+    margin-bottom: 16px;
+}
+
+.wrapper-payment h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: var(--Text);
+}
+
+.wrapper-payment div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper-payment div img {
+    margin-bottom: 45px;
+}
+
+.group-copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid var(--Border);
+}
+
+.terms {
+    display: flex;
+    gap: 30px;
+}
+
 @media screen and (min-width: 768px) {
+    .group-footer {
+        display: flex;
+        gap: 95px;
+    }
+    .group-feature-form {
+        display: flex;
+        gap: 125px;
+    }
+    .explore, .feature-form, .footer {
+        padding: 100px 80px;
+    }
+    .group-explore-cards {
+        justify-content: center;
+    }
+    .explore-content h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .explore-content p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .feature {
+        display: flex;
+        gap: 80px;
+        padding: 100px 80px;
+    }
+    .feature-right h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--Text);
+        margin-bottom: 28px;
+    }
+    .feature-right p {
+        color: var(--Text);
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    img.img-feature {
+        width: 450px;
+        height: 494px;
+        border-radius: 12px;
+    }
     .hero {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -99,6 +302,41 @@ span.hero-title {
 }
 
 @media screen and (max-width: 768px) {
+    .group-copyright, .terms {
+        display: block;
+    }
+    .copy-right {
+        margin-bottom: 30px;
+    }
+    .invert-card {
+        min-width: 18rem;
+    }
+    .explore-content h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .explore-content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .feature, .explore, .feature-form, .footer {
+        padding: 64px 20px 36px 20px;
+    }
+    .group-explore-cards {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .feature-right h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--Text);
+        margin-bottom: 16px;
+    }
+    .feature-right p {
+        color: var(--Text);
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
     .hero {
         display: flex;
         flex-direction: column-reverse;
@@ -114,5 +352,8 @@ span.hero-title {
     }
     .wrapper-group {
         padding: 3rem 1.25rem;
+    }
+    .btn-tertiary, .btn-primary {
+        width: 100%;
     }
 }
