@@ -217,11 +217,6 @@ span.hero-title {
     color: var(--Text);
 }
 
-.wrapper-payment div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .wrapper-payment div img {
     margin-bottom: 45px;
 }
@@ -239,6 +234,13 @@ span.hero-title {
 }
 
 @media screen and (min-width: 768px) {
+    .wrapper-payment div img {
+        width: 90px;
+    }
+    .wrapper-payment div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .group-footer {
         display: flex;
         gap: 95px;
@@ -302,6 +304,10 @@ span.hero-title {
 }
 
 @media screen and (max-width: 768px) {
+    .wrapper-payment div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .group-copyright, .terms {
         display: block;
     }
